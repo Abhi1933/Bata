@@ -27,13 +27,13 @@ public class Firefox {
 		
 		driver.manage().window().maximize();
 		
-		LoginPage loginPage = new LoginPage(driver);
-		loginPage.ClicktoLogin();
-		String user= Utility.fetchExcelData(driver, 0, 0);
-	    loginPage.sendusername(user);
-	    String pass= Utility.fetchExcelData(driver, 0, 0);
-	    loginPage.sendpassword(pass);
-	    loginPage.clicktoSignIn();
+//		LoginPage loginPage = new LoginPage(driver);
+//		loginPage.ClicktoLogin();
+//		String user= Utility.fetchExcelData(driver, 0, 0);
+//	    loginPage.sendusername(user);
+//	    String pass= Utility.fetchExcelData(driver, 0, 0);
+//	    loginPage.sendpassword(pass);
+//	    loginPage.clicktoSignIn();
 		    chappalsandHandBags = new ChappalsandHandBags(driver);
 		    handBags = new HandBags(driver);
 //		    driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
