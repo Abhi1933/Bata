@@ -14,6 +14,10 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 import BrowserSetup.Base;
 import Utils.Utility;
 public class shopbagandshoesandbelts extends Base
@@ -25,10 +29,15 @@ public class shopbagandshoesandbelts extends Base
 	private BeltsInfo beltsInfo;
 	private ShoesInfo shoesInfo;
 	private CartInfo cartInfo;
+	static ExtentTest test;
+	static ExtentHtmlReporter reporter;
 	@Parameters("Browser")
 	@BeforeTest
 	public void launchBrowser(String BrowserName)
 	{
+		reporter=new ExtentHtmlReporter("test-output/ExtendReport/Extent.html");
+		ExtentReports extend = new ExtentReports();
+		extend.attachReporter(reporter);
 		if(BrowserName.equals("Chrome"))
 		{
 			driver= openChromeBrowser();

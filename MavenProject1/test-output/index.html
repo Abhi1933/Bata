@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Shopping" class="navigator-link">
-              <span class="suite-name border-skipped">Shopping</span>
+              <span class="suite-name border-failed">Shopping</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Shopping" class="navigator-link ">
-                    <span>C:\Users\abhij\eclipse-workspace\MavenProject1\testng.xml</span>
+                    <span>C:\Users\abhij\git\Bata\MavenProject1\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,31 +93,40 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,  3 skipped,  </span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Shopping" class="hide-methods skipped suite-Shopping"> (hide)</a> <!-- hide-methods skipped suite-Shopping -->
-                      <a href="#" panel-name="suite-Shopping" class="show-methods skipped suite-Shopping"> (show)</a> <!-- show-methods skipped suite-Shopping -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Shopping" class="hide-methods failed suite-Shopping"> (hide)</a> <!-- hide-methods failed suite-Shopping -->
+                      <a href="#" panel-name="suite-Shopping" class="show-methods failed suite-Shopping"> (show)</a> <!-- show-methods failed suite-Shopping -->
                     </span>
-                    <div class="method-list-content skipped suite-Shopping">
+                    <div class="method-list-content failed suite-Shopping">
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Shopping" title="Bata.shopbagandshoesandbelts" class="method navigator-link" hash-for-method="buyBag">buyBag</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Shopping" title="Bata.shopbagandshoesandbelts" class="method navigator-link" hash-for-method="buyBelts">buyBelts</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                    </div> <!-- method-list-content failed suite-Shopping -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Shopping" class="hide-methods passed suite-Shopping"> (hide)</a> <!-- hide-methods passed suite-Shopping -->
+                      <a href="#" panel-name="suite-Shopping" class="show-methods passed suite-Shopping"> (show)</a> <!-- show-methods passed suite-Shopping -->
+                    </span>
+                    <div class="method-list-content passed suite-Shopping">
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Shopping" title="Bata.shopbagandshoesandbelts" class="method navigator-link" hash-for-method="buyShoes">buyShoes</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Shopping -->
+                    </div> <!-- method-list-content passed suite-Shopping -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -129,9 +138,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Shopping" class="panel Shopping">
-          <div class="suite-Shopping-class-skipped">
+          <div class="suite-Shopping-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">Bata.shopbagandshoesandbelts</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -140,72 +149,12 @@
                   <a name="buyBag">
                   </a> <!-- buyBag -->
                   <span class="method-name">buyBag</span>
-                  <div class="stack-trace">org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-GCJJMKKO&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
-	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:647)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
-	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
-	at org.openqa.selenium.json.Json.toJson(Json.java:42)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at Bata.Bagandshoesandbelt.movetomen(Bagandshoesandbelt.java:33)
-	at Bata.shopbagandshoesandbelts.beforeMethod(shopbagandshoesandbelts.java:71)
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at Bata.shopbagandshoesandbelts.buyBag(shopbagandshoesandbelts.java:88)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-GCJJMKKO&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: driver.version: RemoteWebDriver
-		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
-		at org.openqa.selenium.json.Json.toJson(Json.java:44)
-		... 26 more
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
-	... 38 more
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=106.0.5249.91)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-GCJJMKKO&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\abhij\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63792}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 70587093ec38f77da78197e7c8a32a75
-*** Element info: {Using=xpath, value=//a[text()=&apos;Men&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
-	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
-	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
-	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
-	... 40 more
-... Removed 21 stack frames
+... Removed 12 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -214,161 +163,62 @@ Session ID: 70587093ec38f77da78197e7c8a32a75
                   <a name="buyBelts">
                   </a> <!-- buyBelts -->
                   <span class="method-name">buyBelts</span>
-                  <div class="stack-trace">org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-GCJJMKKO&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
-	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:647)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
-	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
-	at org.openqa.selenium.json.Json.toJson(Json.java:42)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at Bata.Bagandshoesandbelt.movetomen(Bagandshoesandbelt.java:33)
-	at Bata.shopbagandshoesandbelts.beforeMethod(shopbagandshoesandbelts.java:71)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-GCJJMKKO&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: driver.version: RemoteWebDriver
-		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
-		at org.openqa.selenium.json.Json.toJson(Json.java:44)
-		... 26 more
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
-	... 38 more
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=106.0.5249.91)
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;img src=&quot;data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==&quot; data-src=&quot;https://www.bata.in/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-master-catalog/default/dw23456480/images/tile/9640203_1.jpeg?sw=330&quot; alt=&quot;Bata Multi Belt For Men&quot; title=&quot;Bata Multi Belt For Men&quot; class=&quot; b-lazyload_loaded&quot;&gt; is not clickable at point (528, 535). Other element would receive the click: &lt;img src=&quot;data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==&quot; data-src=&quot;https://www.bata.in/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-master-catalog/default/dwb29bfba1/images/tile/9640203_2.jpeg?sw=330&quot; alt=&quot;Bata Multi Belt For Men&quot; title=&quot;Bata Multi Belt For Men&quot; class=&quot; b-lazyload_loaded&quot;&gt;
+  (Session info: chrome=106.0.5249.103)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-GCJJMKKO&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\abhij\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63792}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 70587093ec38f77da78197e7c8a32a75
-*** Element info: {Using=xpath, value=//a[text()=&apos;Men&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\abhij\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61677}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 359a40fc5cf33e163c41846cf9494b17
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
-	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
-	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
-	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
-	... 40 more
-... Removed 21 stack frames
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at Bata.BeltsInfo.clicktobelts(BeltsInfo.java:30)
+	at Bata.shopbagandshoesandbelts.buyBelts(shopbagandshoesandbelts.java:97)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 15 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Shopping-class-failed -->
+          <div class="suite-Shopping-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Bata.shopbagandshoesandbelts</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="buyShoes">
                   </a> <!-- buyShoes -->
                   <span class="method-name">buyShoes</span>
-                  <div class="stack-trace">org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-GCJJMKKO&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
-	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:647)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
-	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
-	at org.openqa.selenium.json.Json.toJson(Json.java:42)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at Bata.Bagandshoesandbelt.movetomen(Bagandshoesandbelt.java:33)
-	at Bata.shopbagandshoesandbelts.beforeMethod(shopbagandshoesandbelts.java:71)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-GCJJMKKO&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: driver.version: RemoteWebDriver
-		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
-		at org.openqa.selenium.json.Json.toJson(Json.java:44)
-		... 26 more
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
-	... 38 more
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=106.0.5249.91)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-GCJJMKKO&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\abhij\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63792}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 70587093ec38f77da78197e7c8a32a75
-*** Element info: {Using=xpath, value=//a[text()=&apos;Men&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
-	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
-	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
-	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
-	... 40 more
-... Removed 21 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Shopping-class-skipped -->
+          </div> <!-- suite-Shopping-class-passed -->
         </div> <!-- panel Shopping -->
         <div panel-name="test-xml-Shopping" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\abhij\eclipse-workspace\MavenProject1\testng.xml</span>
+            <span class="header-content">C:\Users\abhij\git\Bata\MavenProject1\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Shopping&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;ExtentReports.ExtentTestNGIReporterListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;ChromeTest&quot;&gt;
     &lt;parameter name=&quot;Browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
@@ -414,22 +264,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'buyShoes')
+data.setCell(0, 1, 'buyBag')
 data.setCell(0, 2, 'Bata.shopbagandshoesandbelts')
-data.setCell(0, 3, 0);
+data.setCell(0, 3, 5857);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'buyBelts')
+data.setCell(1, 1, 'buyShoes')
 data.setCell(1, 2, 'Bata.shopbagandshoesandbelts')
-data.setCell(1, 3, 0);
+data.setCell(1, 3, 5527);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'buyBag')
+data.setCell(2, 1, 'buyBelts')
 data.setCell(2, 2, 'Bata.shopbagandshoesandbelts')
-data.setCell(2, 3, 0);
+data.setCell(2, 3, 3824);
 window.suiteTableData['Shopping']= { tableData: data, tableDiv: 'times-div-Shopping'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Shopping">
               </div> <!-- times-div-Shopping -->
             </div> <!-- times-div -->
@@ -462,53 +312,55 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">5383 ms</span>
+                <span class="method-start">6312 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">8820 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">6873 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <span class="method-name">buyBag</span>
-                <span class="method-start">7629 ms</span>
+                <span class="method-start">10281 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">7638 ms</span>
+                <span class="method-name">afterMethod([TestResult name=buyBag status=FAILURE method=shopbagandshoesandbelts.buyBag()[pri:0, instance:Bata....)</span>
+                <span class="method-start">16149 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">7644 ms</span>
+                <span class="method-start">16608 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">buyBelts</span>
-                <span class="method-start">7645 ms</span>
+                <span class="method-start">17839 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">7656 ms</span>
+                <span class="method-name">afterMethod([TestResult name=buyBelts status=FAILURE method=shopbagandshoesandbelts.buyBelts()[pri:0, instance:B...)</span>
+                <span class="method-start">21668 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">7658 ms</span>
+                <span class="method-start">22096 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">buyShoes</span>
-                <span class="method-start">7660 ms</span>
+                <span class="method-start">23208 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">7668 ms</span>
+                <span class="method-name">afterMethod([TestResult name=buyShoes status=SUCCESS method=shopbagandshoesandbelts.buyShoes()[pri:0, instance:B...)</span>
+                <span class="method-start">28738 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">7671 ms</span>
+                <span class="method-start">29041 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">7672 ms</span>
+                <span class="method-start">39162 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

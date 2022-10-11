@@ -24,7 +24,7 @@ public class Utility {
 		System.out.println(currentTime);
 	
 		File source =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File dest = new File("C:\\Users\\abhij\\OneDrive\\Desktop\\Software Testing\\TestingDocs\\Test"+testID+currentTime+".jpg");
+		File dest = new File("D:\\Software Testing\\TestingDocs\\Test"+testID+currentTime+".jpg");
 		FileHandler.copy(source, dest);
 	}
 	
